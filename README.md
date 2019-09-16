@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # egg-letao
 
 乐淘项目
@@ -31,3 +32,6 @@ $ npm stop
 
 
 [egg]: https://eggjs.org
+=======
+# egg-letao
+>>>>>>> ea5aa7922f9be6ec647a616c9a17610e95d45880
