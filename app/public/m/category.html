@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/mui/mui.min.css">
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/category.css">
+    <script src="assets/mui/mui.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="header" class="mui-bar mui-bar-nav my-header">
+        <!-- 返回按钮 -->
+        <!-- <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a> -->
+        <h1 class="mui-title">乐淘云购</h1>
+        <a class="mui-icon mui-icon-search mui-pull-right"></a>
+    </header>
+    <nav class="mui-bar mui-bar-tab my-footer">
+        <a class="mui-tab-item" href="#tabbar">
+            <span class="mui-icon mui-icon-home"></span>
+            <span class="mui-tab-label">首页</span>
+        </a>
+        <a class="mui-tab-item mui-active" href="#tabbar-with-chat">
+            <span class="mui-icon mui-icon-bars"></span>
+            <span class="mui-tab-label">分类</span>
+        </a>
+        <a class="mui-tab-item" href="#tabbar-with-contact">
+            <span class="mui-icon fa fa-shopping-cart"></span>
+            <span class="mui-tab-label">购物车</span>
+        </a>
+        <a class="mui-tab-item" href="#tabbar-with-map">
+            <span class="mui-icon mui-icon-person"></span>
+            <span class="mui-tab-label">会员中心</span>
+        </a>
+    </nav>
+    <div class="mui-content mui-row mui-fullscreen">
+        <div class="mui-col-xs-3">
+            <div id="segmentedControls"
+                class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-vertical">
+            </div>
+        </div>
+        <div id="segmentedControlContents" class="mui-col-xs-9" style="border-left: 1px solid #c8c7cc;">
+            <div id="item1" class="mui-control-content mui-active">
+            </div>
+            <div id="item2" class="mui-control-content">
+            </div>
+            <div id="item3" class="mui-control-content">
+            </div>
+        </div>
+    </div>
+    <script src="assets/mui/mui.min.js"></script>
+    <script>
+        var controls = document.getElementById("segmentedControls");
+        var contents = document.getElementById("segmentedControlContents");
+        var html = [];
+        var names = ['运动管', '女士管', '男士管', '帆布管', '户外管', '户内管', '篮球管', '足球管', '乒乓管', '游泳管', '雪地管', '海洋管', '湖南管', '浙江管',
+            '中国管', '美国管'
+        ];
+        var i = 1,
+            j = 1,
+            m = 16, //左侧选项卡数量+1
+            n = 21; //每个选项卡列表数量+1
+        for (; i < m; i++) {
+            html.push('<a class="mui-control-item" href="#content' + i + '">' + names[i - 1] + '</a>');
+        }
+        controls.innerHTML = html.join('');
+        html = [];
+        for (i = 1; i < m; i++) {
+            html.push('<div id="content' + i + '" class="mui-control-content"><ul class="mui-table-view">');
+            for (j = 1; j < n; j++) {
+                html.push(
+                    '<li class="mui-table-view-cell"><a class="mui-tab-item" href="#tabbar"><span class="mui-icon mui-icon-contact"></span><span class="mui-tab-label">阿萨德' +
+                    i + "-" + j + '</span></a></li>');
+            }
+            html.push('</ul></div>');
+        }
+        contents.innerHTML = html.join('');
+        //默认选中第一个
+        controls.querySelector('.mui-control-item').classList.add('mui-active');
+        contents.querySelector('.mui-control-content').classList.add('mui-active');
+    </script>
+
+</body>
+
+</html>
