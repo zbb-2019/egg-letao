@@ -1,0 +1,72 @@
+.anniu {
+    display: flex;
+    padding: 10px;
+}
+
+.anniu button {
+    width: 50%;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 0;
+}
+
+.sport ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0 10px 10px;
+    overflow: hidden;
+}
+
+.sport ul li:nth-child(odd) {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 47%;
+    float: left;
+    background-color: #ccc;
+    border: 1px solid #aaa;
+    padding: 2px;
+    padding: 2px 2px 10px 2px;
+}
+
+.sport ul li:nth-child(even) {
+    margin-bottom: 10px;
+    width: 47%;
+    float: left;
+    background-color: #ccc;
+    border: 1px solid #aaa;
+    padding: 2px 2px 10px 2px;
+}
+
+.sport ul li a {
+    display: block;
+    position: relative;
+}
+
+.sport ul li a img {
+    width: 100%;
+}
+
+.sport ul li a p {
+    color: #000;
+    font-size: 12px;
+    padding: 0px 6px;
+    margin: 0;
+}
+
+.sport ul li a strong {
+    color: red;
+    font-size: 16px;
+    display: inline-block;
+    margin: 0 0 10px;
+
+}
+
+.sport ul li a del {
+    color: #aaa;
+    font-size: 12px;
+}
+
+.sport ul li a button {
+    left: 50%;
+    transform: translateX(-50%);
+}

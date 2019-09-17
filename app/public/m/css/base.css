@@ -1,4 +1,8 @@
 /* 公共样式 */
+* {
+    touch-action: pan-y;
+}
+
 body,
 .mui-content {
     background-color: white;
