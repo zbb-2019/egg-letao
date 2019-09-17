@@ -39,5 +39,5 @@ $ npm stop
 - 强制合并拉去远程代码
 - 推送本地代码
 - git remote add letao(you project) https://github.com/zbb-2019/egg-letao.git
-- pull letao master --allow-unrelated-histories
+- git pull letao master --allow-unrelated-histories
 - git push letao master
