@@ -6,36 +6,257 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/mui/mui.min.css">
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
     <script src="assets/mui/mui.min.js"></script>
     <title>Document</title>
+
 </head>
 
 <body>
-    <header id="header" class="mui-bar mui-bar-nav">
-        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
-        <h1 class="mui-title">导航栏</h1>
+    <header id="header" class="mui-bar mui-bar-nav my-header">
+        <!-- 返回按钮 -->
+        <!-- <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a> -->
+        <h1 class="mui-title">乐淘云购</h1>
+        <a class="mui-icon mui-icon-search mui-pull-right"></a>
     </header>
-    <nav class="mui-bar mui-bar-tab">
+    <nav class="mui-bar mui-bar-tab my-footer">
         <a class="mui-tab-item mui-active" href="#tabbar">
             <span class="mui-icon mui-icon-home"></span>
             <span class="mui-tab-label">首页</span>
         </a>
         <a class="mui-tab-item" href="#tabbar-with-chat">
-            <span class="mui-icon mui-icon-email"><span class="mui-badge">9</span></span>
-            <span class="mui-tab-label">消息</span>
+            <span class="mui-icon mui-icon-bars"></span>
+            <span class="mui-tab-label">分类</span>
         </a>
         <a class="mui-tab-item" href="#tabbar-with-contact">
-            <span class="mui-icon mui-icon-contact"></span>
-            <span class="mui-tab-label">通讯录</span>
+            <span class="mui-icon fa fa-shopping-cart"></span>
+            <span class="mui-tab-label">购物车</span>
         </a>
         <a class="mui-tab-item" href="#tabbar-with-map">
-            <span class="mui-icon mui-icon-gear"></span>
-            <span class="mui-tab-label">设置</span>
+            <span class="mui-icon mui-icon-person"></span>
+            <span class="mui-tab-label">会员中心</span>
         </a>
     </nav>
     <div class="mui-content">
-        网页内容区域
+        <!-- 首页轮播图 -->
+        <div id="slider" class="mui-slider">
+            <div class="mui-slider-group mui-slider-loop">
+                <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+                <div class="mui-slider-item mui-slider-item-duplicate">
+                    <a href="#">
+                        <img src="img/home-bander-4.jpg">
+                        <p class="mui-slider-title">静静看这世界</p>
+                    </a>
+                </div>
+                <div class="mui-slider-item">
+                    <a href="#">
+                        <img src="img/home-bander-1.jpg">
+                        <p class="mui-slider-title">幸福就是可以一起睡觉</p>
+                    </a>
+                </div>
+                <div class="mui-slider-item">
+                    <a href="#">
+                        <img src="img/home-bander-2.jpg">
+                        <p class="mui-slider-title">想要一间这样的木屋，静静的喝咖啡</p>
+                    </a>
+                </div>
+                <div class="mui-slider-item">
+                    <a href="#">
+                        <img src="img/home-bander-3.jpg">
+                        <p class="mui-slider-title">Color of SIP CBD</p>
+                    </a>
+                </div>
+                <div class="mui-slider-item">
+                    <a href="#">
+                        <img src="img/home-bander-4.jpg">
+                        <p class="mui-slider-title">静静看这世界</p>
+                    </a>
+                </div>
+                <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+                <div class="mui-slider-item mui-slider-item-duplicate">
+                    <a href="#">
+                        <img src="img/home-bander-1.jpg">
+                        <p class="mui-slider-title">幸福就是可以一起睡觉</p>
+                    </a>
+                </div>
+            </div>
+            <div class="mui-slider-indicator mui-text-right">
+                <div class="mui-indicator mui-active"></div>
+                <div class="mui-indicator"></div>
+                <div class="mui-indicator"></div>
+                <div class="mui-indicator"></div>
+            </div>
+        </div>
+        <!-- 导航链接 -->
+        <div class="nav-links mui-clearfix">
+            <a href="#">
+                <img src="img/home-nav-1.jpg">
+            </a>
+            <a href="#">
+                <img src="img/home-nav-2.jpg">
+            </a>
+            <a href="#">
+                <img src="img/home-nav-3.jpg">
+            </a>
+            <a href="#">
+                <img src="img/home-nav-4.jpg">
+            </a>
+            <a href="#">
+                <img src="img/home-nav-5.jpg">
+            </a>
+            <a href="#">
+                <img src="img/home-nav-6.jpg">
+            </a>
+        </div>
+        <!-- 品牌专区 -->
+        <div class="brand">
+            <div class="brand-title">
+                品牌专区
+            </div>
+            <ul>
+                <li><a href="#"><img src="img/home-brand-1.jpg" alt=""></a></li>
+                <li><a href="#"><img src="img/home-brand-2.jpg" alt=""></a></li>
+                <li><a href="#"><img src="img/home-brand-3.jpg" alt=""></a></li>
+                <li><a href="#"><img src="img/home-brand-4.jpg" alt=""></a></li>
+                <li><a href="#"><img src="img/home-brand-5.jpg" alt=""></a></li>
+                <li><a href="#"><img src="img/home-brand-6.jpg" alt=""></a></li>
+                <li><a href="#"><img src="img/home-brand-7.jpg" alt=""></a></li>
+                <li><a href="#"><img src="img/home-brand-8.jpg" alt=""></a></li>
+            </ul>
+        </div>
+        <!-- 运动生活专区 -->
+        <div class="sport">
+            <div class="title">运动生活专区</div>
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="img/home-nav-1.jpg" alt="">
+                        <p>阿迪达斯阿迪达斯：男士 场下休闲球鞋</p>
+                        <strong>￥560.00</strong>&nbsp;&nbsp;<del>￥880.00</del>
+                        <button type="button" class="mui-btn mui-btn-primary">立即购买</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/home-nav-2.jpg" alt="">
+                        <p>阿迪达斯阿迪达斯：男士 场下休闲球鞋</p>
+                        <strong>￥560.00</strong>&nbsp;&nbsp;<del>￥880.00</del>
+                        <button type="button" class="mui-btn mui-btn-primary">立即购买</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/home-nav-3.jpg" alt="">
+                        <p>阿迪达斯阿迪达斯：男士 场下休闲球鞋</p>
+                        <strong>￥560.00</strong>&nbsp;&nbsp;<del>￥880.00</del>
+                        <button type="button" class="mui-btn mui-btn-primary">立即购买</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/home-nav-4.jpg" alt="">
+                        <p>阿迪达斯阿迪达斯：男士 场下休闲球鞋</p>
+                        <strong>￥560.00</strong>&nbsp;&nbsp;<del>￥880.00</del>
+                        <button type="button" class="mui-btn mui-btn-primary">立即购买</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/home-nav-5.jpg" alt="">
+                        <p>阿迪达斯阿迪达斯：男士 场下休闲球鞋</p>
+                        <strong>￥560.00</strong>&nbsp;&nbsp;<del>￥880.00</del>
+                        <button type="button" class="mui-btn mui-btn-primary">立即购买</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/home-nav-6.jpg" alt="">
+                        <p>阿迪达斯阿迪达斯：男士 场下休闲球鞋</p>
+                        <strong>￥560.00</strong>&nbsp;&nbsp;<del>￥880.00</del>
+                        <button type="button" class="mui-btn mui-btn-primary">立即购买</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/home-nav-7.jpg" alt="">
+                        <p>阿迪达斯阿迪达斯：男士 场下休闲球鞋</p>
+                        <strong>￥560.00</strong>&nbsp;&nbsp;<del>￥880.00</del>
+                        <button type="button" class="mui-btn mui-btn-primary">立即购买</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 男士生活专区 -->
+        <div class="sport">
+            <div class="title">男士生活专区</div>
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="img/home-nav-1.jpg" alt="">
+                        <p>阿迪达斯阿迪达斯：男士 场下休闲球鞋</p>
+                        <strong>￥560.00</strong>&nbsp;&nbsp;<del>￥880.00</del>
+                        <button type="button" class="mui-btn mui-btn-primary">立即购买</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/home-nav-2.jpg" alt="">
+                        <p>阿迪达斯阿迪达斯：男士 场下休闲球鞋</p>
+                        <strong>￥560.00</strong>&nbsp;&nbsp;<del>￥880.00</del>
+                        <button type="button" class="mui-btn mui-btn-primary">立即购买</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/home-nav-3.jpg" alt="">
+                        <p>阿迪达斯阿迪达斯：男士 场下休闲球鞋</p>
+                        <strong>￥560.00</strong>&nbsp;&nbsp;<del>￥880.00</del>
+                        <button type="button" class="mui-btn mui-btn-primary">立即购买</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 女士生活专区 -->
+        <div class="sport">
+            <div class="title">女士生活专区</div>
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="img/home-nav-1.jpg" alt="">
+                        <p>阿迪达斯阿迪达斯：男士 场下休闲球鞋</p>
+                        <strong>￥560.00</strong>&nbsp;&nbsp;<del>￥880.00</del>
+                        <button type="button" class="mui-btn mui-btn-primary">立即购买</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/home-nav-2.jpg" alt="">
+                        <p>阿迪达斯阿迪达斯：男士 场下休闲球鞋</p>
+                        <strong>￥560.00</strong>&nbsp;&nbsp;<del>￥880.00</del>
+                        <button type="button" class="mui-btn mui-btn-primary">立即购买</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/home-nav-3.jpg" alt="">
+                        <p>阿迪达斯阿迪达斯：男士 场下休闲球鞋</p>
+                        <strong>￥560.00</strong>&nbsp;&nbsp;<del>￥880.00</del>
+                        <button type="button" class="mui-btn mui-btn-primary">立即购买</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
+
+    <script src="assets/mui/mui.min.js"></script>
+    <script>
+        var gallery = mui('.mui-slider');
+        gallery.slider({
+            interval: 3000 //自动轮播周期，若为0则不自动播放，默认为0；
+        });
+    </script>
 </body>
 
 </html>
